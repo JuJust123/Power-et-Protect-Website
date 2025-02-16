@@ -266,16 +266,6 @@ nav a:hover {
   justify-content: center;
 }
 
-.hotel-2text {
-  width: 50%;
-  background-color: #5ff3f8;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 40px;
-}
-
 .text1 {
   background-color: #5ff3f8;
   padding: 40px;
@@ -305,7 +295,6 @@ nav a:hover {
   }
 
   .hotel-text,
-  .hotel-2text,
   .hotel-image {
     width: 100%;
   }
@@ -331,28 +320,6 @@ nav a:hover {
 
   .hotel-section {
     padding-top: 40px;
-  }
-
-  /* Nouvelle règle pour la page products.html */
-  .products-content {
-    flex-direction: column;
-  }
-
-  .products-content .hotel-text {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .products-content .hotel-image {
-    order: 1;
-  }
-
-  .products-content .text1 {
-    order: 2;
-  }
-
-  .products-content .text2 {
-    order: 3;
   }
 }
 
@@ -453,12 +420,6 @@ footer {
   }
 }
 
-@media (min-width: 768px) {
-  #momo2 {
-    display: none;
-  }
-}
-
 @media (max-width: 768px) {
   .contact-container {
     grid-template-columns: 1fr;
@@ -485,12 +446,6 @@ footer {
 
   #momo {
     display: none;
-  }
-
-  .hotelbase-text {
-    width: 90vw;
-    display: flex;
-    justify-content: center;
   }
 }
 
@@ -531,7 +486,7 @@ footer {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 15px;
-  background: #007bff;
+  background: #007BFF;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -541,9 +496,5 @@ footer {
 }
 
 #momo {
-  cursor: pointer;
-}
-
-#momo2 {
   cursor: pointer;
 }
