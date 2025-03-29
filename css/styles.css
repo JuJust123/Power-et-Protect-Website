@@ -178,7 +178,7 @@ nav a:hover {
 
 /*Base*/
 .hero {
-  background-image: url("../assets/images/fullteam_background.jpg");
+  background-image: url("../assets/images/background.gif");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
