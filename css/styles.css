@@ -35,7 +35,16 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #333;
-  background-color: #ddd7d7;
+  background-color: #232323;
+}
+
+.homepage {
+  position: relative;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #232323;
+  overflow: hidden;
 }
 
 /* Bandeau d'annonces */
@@ -73,8 +82,8 @@ body {
 
 /* Navigation */
 header {
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
+  background-color: #161b24;
+  border-bottom: 1px solid #229a1a;
   position: fixed;
   top: 0;
   width: 100%;
@@ -91,13 +100,13 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
   margin: 0 1rem;
   font-weight: bold;
 }
 
 nav a:hover {
-  color: #007bff;
+  color: #229a1a;
 }
 
 .hero h1 {
@@ -173,7 +182,7 @@ nav a:hover {
 }
 
 .product-item .btn:hover {
-  background-color: #0056b3;
+  background-color: #229a1a;
 }
 
 /*Base*/
@@ -198,7 +207,7 @@ nav a:hover {
 .hotel-title {
   text-align: center;
   font-size: 3rem;
-  color: #2f4f2f;
+  color: #229a1a;
   font-family: "Playfair Display", arial, serif;
   margin-bottom: 30px;
   position: relative;
@@ -216,7 +225,7 @@ nav a:hover {
   font-weight: bold;
   z-index: 10;
   white-space: nowrap;
-  color: #2f4f2f;
+  color: #229a1a;
   text-align: center;
 }
 
@@ -250,7 +259,7 @@ nav a:hover {
 /* Bloc de texte */
 .hotelbase-text {
   width: 50%;
-  background-color: #5ff3f8;
+  background-color: #bebebe;
   box-sizing: border-box;
   padding: 40px;
   display: flex;
@@ -260,7 +269,7 @@ nav a:hover {
 
 .hotel-text {
   width: 50%;
-  background-color: #5ff3f8;
+  background-color: #ffffff;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -269,7 +278,7 @@ nav a:hover {
 
 .hotel-2text {
   width: 50%;
-  background-color: #5ff3f8;
+  background-color: #ffffff;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -369,9 +378,19 @@ footer {
   z-index: 2;
 }
 
+footer a {
+  color: white; /* Couleur du texte du lien */
+  text-decoration: none; /* Enlève le soulignement */
+}
+
+footer a:hover {
+  color: #229a1a; /* Couleur verte au survol */
+  text-decoration: underline; /* Ajoute un soulignement au survol (optionnel) */
+}
+
 /* Contact Section Styles */
 .contact-section {
-  background-color: #3393d6;
+  background-color: #232323;
   color: white;
   padding: 60px 20px;
   min-height: calc(100vh - 120px);
@@ -421,7 +440,7 @@ footer {
 }
 
 .contact-column a:hover {
-  opacity: 0.8;
+  color: #229a1a;
 }
 
 /* Ajout des séparateurs */
@@ -538,7 +557,7 @@ footer {
   border-radius: 5px;
 }
 .mail-btn:hover {
-  background: #0056b3;
+  background: #229a1a;
 }
 
 #momo {
