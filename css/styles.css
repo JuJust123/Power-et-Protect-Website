@@ -136,12 +136,26 @@ nav a:hover {
   text-align: center;
 }
 
+.hotel-2text .btn {
+  background-color: #229a1a;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
 .hero .btn:hover {
   background-color: #fff;
   color: #229a1a;
 }
 
 .hotelbase-text .btn:hover {
+  background-color: #fff;
+  color: #229a1a;
+}
+
+.hotel-2text .btn:hover {
   background-color: #fff;
   color: #229a1a;
 }
@@ -234,6 +248,21 @@ nav a:hover {
   font-family: "TitreVert", arial, sans-serif;
   position: relative;
   top: 0px; /* Changé de 30px à -30px pour placer le titre au-dessus */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  font-weight: bold;
+  z-index: 10;
+  white-space: nowrap;
+  color: #229a1a;
+  text-align: center;
+  margin-bottom: 10px; /* Ajout d'une marge en bas pour créer de l'espace */
+}
+
+.middle-title {
+  font-family: "TitreVert", arial, sans-serif;
+  position: relative;
+  top: 21px; /* Changé de 30px à -30px pour placer le titre au-dessus */
   left: 50%;
   transform: translateX(-50%);
   font-size: 3rem;
@@ -584,3 +613,67 @@ footer a:hover {
   cursor: pointer;
 }
 
+/* Projects page */
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-card h3 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.project-card p {
+  color: #555;
+}
+
+.project-links .btn {
+  display: inline-block;
+  padding: 10px 15px;
+  margin-top: 10px;
+  background: #229a1a;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.project-links .btn:hover {
+  background: #232323;
+  color: #229a1a;
+}
+
+.project-links a {
+  color: white; /* Couleur du texte du lien */
+  text-decoration: none; /* Enlève le soulignement */
+}
+
+.project-links a:hover {
+  color: #229a1a; /* Couleur verte au survol */
+  text-decoration: underline; /* Ajoute un soulignement au survol (optionnel) */
+}

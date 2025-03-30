@@ -1,0 +1,2 @@
+D:\Portfolio\Power-et-Protect-Website\projects\Archipel Command Game\bin\Release\netcoreapp3.1\win-x64\publish\Archipel (exe).pdb
+D:\Portfolio\Power-et-Protect-Website\projects\Archipel Command Game\bin\Release\netcoreapp3.1\win-x64\publish\Archipel (exe).exe
