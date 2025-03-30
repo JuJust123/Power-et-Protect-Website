@@ -120,24 +120,39 @@ nav a:hover {
 }
 
 .hero .btn {
-  background-color: #3393d6;
+  background-color: #229a1a;
   color: #fff;
   padding: 0.75rem 1.5rem;
   text-decoration: none;
   border-radius: 5px;
 }
 
+.hotelbase-text .btn {
+  background-color: #229a1a;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
 .hero .btn:hover {
-  background-color: #0056b3;
+  background-color: #fff;
+  color: #229a1a;
+}
+
+.hotelbase-text .btn:hover {
+  background-color: #fff;
+  color: #229a1a;
 }
 
 /* Produits phares */
-.featured-products {
+.featured-projects {
   padding: 2rem;
   text-align: center;
 }
 
-.featured-products h2 {
+.featured-projects h2 {
   margin-bottom: 2rem;
 }
 
@@ -218,7 +233,7 @@ nav a:hover {
 .overlapping-title {
   font-family: "TitreVert", arial, sans-serif;
   position: relative;
-  top: 30px;
+  top: 0px; /* Changé de 30px à -30px pour placer le titre au-dessus */
   left: 50%;
   transform: translateX(-50%);
   font-size: 3rem;
@@ -227,6 +242,7 @@ nav a:hover {
   white-space: nowrap;
   color: #229a1a;
   text-align: center;
+  margin-bottom: 10px; /* Ajout d'une marge en bas pour créer de l'espace */
 }
 
 .hotel-section {
@@ -234,7 +250,7 @@ nav a:hover {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 20px 20px 0; /* Ajout de padding en haut */
 }
 
 /* Conteneur principal */
@@ -247,7 +263,7 @@ nav a:hover {
   margin: 0 auto;
 }
 
-.products-content {
+.projects-content {
   position: relative;
   z-index: 1;
   display: flex;
@@ -343,25 +359,25 @@ nav a:hover {
     padding-top: 40px;
   }
 
-  /* Nouvelle règle pour la page products.html */
-  .products-content {
+  /* Nouvelle règle pour la page projects.html */
+  .projects-content {
     flex-direction: column;
   }
 
-  .products-content .hotel-text {
+  .projects-content .hotel-text {
     display: flex;
     flex-direction: column;
   }
 
-  .products-content .hotel-image {
+  .projects-content .hotel-image {
     order: 1;
   }
 
-  .products-content .text1 {
+  .projects-content .text1 {
     order: 2;
   }
 
-  .products-content .text2 {
+  .projects-content .text2 {
     order: 3;
   }
 }
@@ -567,3 +583,4 @@ footer a:hover {
 #momo2 {
   cursor: pointer;
 }
+
