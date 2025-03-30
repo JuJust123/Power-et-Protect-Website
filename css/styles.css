@@ -482,6 +482,14 @@ nav a:hover {
   .projects-content .text2 {
     order: 3;
   }
+
+  .overlapping-title{
+    font-size: 1.5rem;
+  }
+
+  .middle-title{
+    font-size: 1.5rem;
+  }
 }
 
 /* Pied de page */
