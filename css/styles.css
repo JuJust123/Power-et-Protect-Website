@@ -109,6 +109,96 @@ nav a:hover {
   color: #229a1a;
 }
 
+/* Menu hamburger pour mobile */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 10px;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  z-index: 1002; /* Augmenté pour être au-dessus du fond */
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Fond carré pour le bouton hamburger */
+.hamburger-background {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1001;
+  width: 45px;
+  height: 45px;
+  right: 10px;
+  top: 5px;
+}
+
+/* Media query pour le menu mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  /* Afficher le fond carré derrière le hamburger */
+  .hamburger-background {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    position: fixed;
+    top: 40px;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    background-color: #161b24;
+    padding-top: 60px;
+    transition: right 0.3s ease;
+    align-items: center;
+  }
+
+  nav ul.active {
+    right: 0;
+  }
+
+  nav ul li {
+    margin: 15px 0;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .social-icons li {
+    margin: 0 10px;
+  }
+
+  /* Animation du hamburger */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+}
+
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
@@ -677,3 +767,4 @@ footer a:hover {
   color: #229a1a; /* Couleur verte au survol */
   text-decoration: underline; /* Ajoute un soulignement au survol (optionnel) */
 }
+

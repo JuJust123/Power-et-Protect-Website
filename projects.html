@@ -17,22 +17,42 @@
         </div>
     </a>
     <header>
+        <button class="hamburger" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <nav>
-            <ul>
+            <ul id="nav-menu">
                 <li><a href="index.html">Welcome</a></li>
                 <li><a href="about.html">About me</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="https://www.twitch.tv/jujust1" target="_blank">
-                    <img src="assets/images/icons/twitch.png" alt="twitch" class="icon"></a></li>
-                <li><a href="https://www.youtube.com/@jujust1" target="_blank">
-                    <img src="assets/images/icons/youtube.png" alt="youtube" class="icon"></a></li>
-                <li><a href="https://www.x.com/@jujust12345" target="_blank">
-                    <img src="assets/images/icons/twitter.png" alt="twitter" class="icon"></a></li>
-                <li><a href="https://www.tiktok.com/@jujust12345" target="_blank">
-                    <img src="assets/images/icons/tiktok.png" alt="tiktok" class="icon"></a></li>
-                <li><a href="https://www.instagram.com/JuJust12345" target="_blank">
-                    <img src="assets/images/icons/instagram.png" alt="Insta" class="icon"></a></li>
+                <li class="social-icons">
+                    <a href="https://www.twitch.tv/jujust1" target="_blank">
+                        <img src="assets/images/icons/twitch.png" alt="twitch" class="icon">
+                    </a>
+                </li>
+                <li class="social-icons">
+                    <a href="https://www.youtube.com/@jujust1" target="_blank">
+                        <img src="assets/images/icons/youtube.png" alt="youtube" class="icon">
+                    </a>
+                </li>
+                <li class="social-icons">
+                    <a href="https://www.x.com/@jujust12345" target="_blank">
+                        <img src="assets/images/icons/twitter.png" alt="twitter" class="icon">
+                    </a>
+                </li>
+                <li class="social-icons">
+                    <a href="https://www.tiktok.com/@jujust12345" target="_blank">
+                        <img src="assets/images/icons/tiktok.png" alt="tiktok" class="icon">
+                    </a>
+                </li>
+                <li class="social-icons">
+                    <a href="https://www.instagram.com/JuJust12345" target="_blank">
+                        <img src="assets/images/icons/instagram.png" alt="Insta" class="icon">
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -160,6 +180,29 @@
     <footer>
         <p>Last Update : 29/03/2025</p>
     </footer>
+
+    <script>
+        // Script pour le menu hamburger
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.getElementById('hamburger-menu');
+            const navMenu = document.getElementById('nav-menu');
+            
+            hamburger.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            });
+            
+            // Fermer le menu quand on clique sur un lien
+            const navLinks = document.querySelectorAll('#nav-menu a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    navMenu.classList.remove('active');
+                    hamburger.classList.remove('active');
+                });
+            });
+        });
+    </script>
+
     <!-- POPUP -->
 <div id="popup" class="popup">
     <div class="popup-content">
