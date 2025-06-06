@@ -8,12 +8,31 @@
     <title>Justin Esquer - </title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <div id="language-switcher">
+        <img class="en" style="display: none;" onclick="switchLanguage('fr')" src="assets/images/icons/fr.png" alt="French" width="32" height="30">
+        <img class="fr" onclick="switchLanguage('en')" src="assets/images/icons/en.png" alt="French" width="32" height="30">
+    </div>
 </head>
+
+<script>
+    function switchLanguage(lang) {
+      const allLangs = ['fr', 'en']; // Les langues disponibles
+  
+      allLangs.forEach(l => {
+        // Pour chaque élément de chaque langue
+        document.querySelectorAll('.' + l).forEach(el => {
+          el.style.display = (l === lang) ? '' : 'none';
+        });
+      });
+    }
+</script>
+
 <body>
     <a href="contact.html" class="announcement-bar-link">
         <div class="announcement-bar">
             <div class="announcement-container">
-                <span>Suivez-moi sur les réseaux sociaux !</span>
+                <span class="fr">Suivez-moi sur les réseaux sociaux !</span>
+                <span class="en" style="display: none;">Follow me on social media !</span>
             </div>
         </div>
     </a>
@@ -25,10 +44,14 @@
         </button>
         <nav>
             <ul id="nav-menu">
-                <li><a href="index.html">Welcome</a></li>
-                <li><a href="about.html">About me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" class="en" style="display: none;">Welcome</a></li>
+                <li><a href="about.html" class="en" style="display: none;">About me</a></li>
+                <li><a href="projects.html" class="en" style="display: none;">Projects</a></li>
+                <li><a href="contact.html" class="en" style="display: none;">Contact</a></li>
+                <li><a href="index.html" class="fr">Accueil</a></li>
+                <li><a href="about.html" class="fr">A propos</a></li>
+                <li><a href="projects.html" class="fr">Projets</a></li>
+                <li><a href="contact.html" class="fr">Contact</a></li>
                 <li class="social-icons">
                     <a href="https://www.twitch.tv/jujust1" target="_blank">
                         <img src="assets/images/icons/twitch.png" alt="twitch" class="icon">
@@ -75,7 +98,8 @@ Et prima post Osdroenam quam, ut dictum est, ab hac descriptione discrevimus, Co
         </section>
     </main>
     <footer>
-        <p>Last Update : 02/04/2025</p>
+        <p class="en" style="display: none;">Last Update : 06/06/2025</p>
+        <p class="fr">Dernière Mise à jour : 06/06/2025</p>
     </footer>
 
     <script>

@@ -763,3 +763,16 @@ footer a:hover {
   color: #229a1a; /* Couleur verte au survol */
   text-decoration: underline; /* Ajoute un soulignement au survol (optionnel) */
 }
+
+#language-switcher {
+  position: fixed; /* reste visible même au scroll */
+  top: 53px;
+  left: 10px;
+  z-index: 1010; /* pour rester au-dessus du reste */
+}
+
+#language-switcher button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}

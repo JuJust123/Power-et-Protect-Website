@@ -6,12 +6,31 @@
     <title>Justin Esquer - About</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <div id="language-switcher">
+        <img class="en" style="display: none;" onclick="switchLanguage('fr')" src="assets/images/icons/fr.png" alt="French" width="32" height="30">
+        <img class="fr" onclick="switchLanguage('en')" src="assets/images/icons/en.png" alt="French" width="32" height="30">
+    </div>
 </head>
+
+<script>
+    function switchLanguage(lang) {
+      const allLangs = ['fr', 'en']; // Les langues disponibles
+  
+      allLangs.forEach(l => {
+        // Pour chaque élément de chaque langue
+        document.querySelectorAll('.' + l).forEach(el => {
+          el.style.display = (l === lang) ? '' : 'none';
+        });
+      });
+    }
+</script>
+
 <body>
     <a href="contact.html" class="announcement-bar-link">
         <div class="announcement-bar">
             <div class="announcement-container">
-                <span>Suivez-moi sur les réseaux sociaux !</span>
+                <span class="fr">Suivez-moi sur les réseaux sociaux !</span>
+                <span class="en" style="display: none;">Follow me on social media !</span>
             </div>
         </div>
     </a>
@@ -23,10 +42,14 @@
         </button>
         <nav>
             <ul id="nav-menu">
-                <li><a href="index.html">Welcome</a></li>
-                <li><a href="about.html">About me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" class="en" style="display: none;">Welcome</a></li>
+                <li><a href="about.html" class="en" style="display: none;">About me</a></li>
+                <li><a href="projects.html" class="en" style="display: none;">Projects</a></li>
+                <li><a href="contact.html" class="en" style="display: none;">Contact</a></li>
+                <li><a href="index.html" class="fr">Accueil</a></li>
+                <li><a href="about.html" class="fr">A propos</a></li>
+                <li><a href="projects.html" class="fr">Projets</a></li>
+                <li><a href="contact.html" class="fr">Contact</a></li>
                 <li class="social-icons">
                     <a href="https://www.twitch.tv/jujust1" target="_blank">
                         <img src="assets/images/icons/twitch.png" alt="twitch" class="icon">
@@ -57,15 +80,19 @@
     </header>
     <main>
         <section class="hotel-section">
-            <h2 class="overlapping-title">À propos de moi</h2>
+            <h2 class="overlapping-title fr">À propos de moi</h2>
+            <h2 class="overlapping-title en" style="display: none;">About me</h2>
             <div class="hotel-content">
                 <div class="hotelbase-text">
-                    <p style="font-size: 16.5px;">Passionné d’informatique depuis mes plus jeunes années, j’ai naturellement accumulé des connaissances dans ce domaine de façon autodidacte. J’ai appris à l’aide d’internet et pratique activement depuis plusieurs années. Je code notamment en C#, Python, HTML, et CSS. Le divertissement et le jeu vidéo sont également des domaines qui me passionnent. C'est pour cette raison que j’ai participé à de nombreuses GameJam et Bootcamps dans les alentours de Bordeaux, comme ceux organisés par l’école de La Horde par exemple. J’ai également réalisé mon stage de seconde au Studio Black Flag et participé à la création de leur jeu Orphan Age. <br><br>
+                    <p style="font-size: 16.5px;" class="fr">Passionné d’informatique depuis mes plus jeunes années, j’ai naturellement accumulé des connaissances dans ce domaine de façon autodidacte. J’ai appris à l’aide d’internet et pratique activement depuis plusieurs années. Je code notamment en C#, Python, HTML, et CSS. Le divertissement et le jeu vidéo sont également des domaines qui me passionnent. C'est pour cette raison que j’ai participé à de nombreuses GameJam et Bootcamps dans les alentours de Bordeaux, comme ceux organisés par l’école de La Horde par exemple. J’ai également réalisé mon stage de seconde au Studio Black Flag et participé à la création de leur jeu Orphan Age. <br><br>
                         Je compose également des morceaux de musique, et dessine sur papier dans un style réaliste ! <br><br>
                         À côté de tout cela, je suis également streamer ! Je profite de mes streams pour combiner mes passions ; je stream durant 4h, environ 4 fois par semaine, sur des jeux vidéo variés, de la programmation, du dessin, du montage vidéo, ou des compositions musicales.                        
-                      </p>
-                      <br>
-                    <a href="projects.html" class="btn">Voir mes projets</a>
+                    </p>
+                    <p style="font-size: 16.5px; display: none;" class="en"><br>Passionate about computers since my early years, I have naturally accumulated knowledge in this field in a self-taught way. I learned using the internet and have been actively practicing for several years. I code mainly in C#, Python, HTML, and CSS. Entertainment and video games are also areas that fascinate me. This is why I have participated in numerous GameJams and Bootcamps around Bordeaux, such as those organized by La Horde school for example. I also completed my second-year internship at Black Flag Studio and contributed to the creation of their game Orphan Age. <br><br>
+                        I also compose music and draw on paper in a realistic style! <br><br>
+                        Besides all this, I am also a streamer! I use my streams to combine my passions; I stream for about 4 hours, around 4 times a week, on various video games, programming, drawing, video editing, or music composition.<br><br><br>
+                    </p>
+                    <a href="/projects/CV Justin ESQUER.pdf" download="Justin Esquer CV.pdf" class="btn">Accéder à mon CV en format PDF</a>
                 </div>
                 <div class="hotel-image">
                     <img src="assets/images/logo.png" alt="Power et Protect">
@@ -74,7 +101,8 @@
         </section>
     </main>
     <footer>
-        <p>Last Update : 02/04/2025</p>
+        <p class="en" style="display: none;">Last Update : 06/06/2025</p>
+        <p class="fr">Dernière Mise à jour : 06/06/2025</p>
     </footer>
 
     <script>
