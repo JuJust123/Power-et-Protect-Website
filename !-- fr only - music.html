@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Esquer - Music</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <div id="language-switcher">
+        <img class="en" style="display: none;" onclick="switchLanguage('fr')" src="assets/images/icons/fr.png" alt="French" width="32" height="30">
+        <img class="fr" onclick="switchLanguage('en')" src="assets/images/icons/en.png" alt="French" width="32" height="30">
+    </div>
+</head>
+
+<script>
+    function switchLanguage(lang) {
+      const allLangs = ['fr', 'en']; // Les langues disponibles
+  
+      allLangs.forEach(l => {
+        // Pour chaque élément de chaque langue
+        document.querySelectorAll('.' + l).forEach(el => {
+          el.style.display = (l === lang) ? '' : 'none';
+        });
+      });
+    }
+</script>
+
+<script>
+    function switchLanguage(lang) {
+      const allLangs = ['fr', 'en']; // Les langues disponibles
+  
+      allLangs.forEach(l => {
+        // Pour chaque élément de chaque langue
+        document.querySelectorAll('.' + l).forEach(el => {
+          el.style.display = (l === lang) ? '' : 'none';
+        });
+      });
+    }
+</script>
+<body>
+    <a href="contact.html" class="announcement-bar-link">
+        <div class="announcement-bar">
+            <div class="announcement-container">
+                <span class="fr">Suivez-moi sur les réseaux sociaux !</span>
+                <span class="en" style="display: none;">Follow me on social media !</span>
+            </div>
+        </div>
+    </a>
+    <header>
+        <button class="hamburger" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html" class="en" style="display: none;">Welcome</a></li>
+                <li><a href="about.html" class="en" style="display: none;">About me</a></li>
+                <li><a href="projects.html" class="en" style="display: none;">Projects</a></li>
+                <li><a href="contact.html" class="en" style="display: none;">Contact</a></li>
+                <li><a href="index.html" class="fr">Accueil</a></li>
+                <li><a href="about.html" class="fr">A propos</a></li>
+                <li><a href="projects.html" class="fr">Projets</a></li>
+                <li><a href="contact.html" class="fr">Contact</a></li>
+                <li class="social-icons">
+                    <a href="https://www.twitch.tv/jujust1" target="_blank">
+                        <img src="assets/images/icons/twitch.png" alt="twitch" class="icon">
+                    </a>
+                </li>
+                <li class="social-icons">
+                    <a href="https://www.youtube.com/@jujust1" target="_blank">
+                        <img src="assets/images/icons/youtube.png" alt="youtube" class="icon">
+                    </a>
+                </li>
+                <li class="social-icons">
+                    <a href="https://www.x.com/@jujust12345" target="_blank">
+                        <img src="assets/images/icons/twitter.png" alt="twitter" class="icon">
+                    </a>
+                </li>
+                <li class="social-icons">
+                    <a href="https://www.tiktok.com/@jujust12345" target="_blank">
+                        <img src="assets/images/icons/tiktok.png" alt="tiktok" class="icon">
+                    </a>
+                </li>
+                <li class="social-icons">
+                    <a href="https://www.instagram.com/JuJust12345" target="_blank">
+                        <img src="assets/images/icons/instagram.png" alt="Insta" class="icon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hotel-section">
+            <h2 class="middle-title">Mes compositions</h2>
+            <section class="projects">
+                <div class="project-card">
+                    <h3>Parce qu'il faut une première...</h3>
+                    <p>Mon premier morceau est un essai. Je suis parti à la découverte de mes goûts musicaux et, surtout, de mon nouveau logiciel de musique ! J'ai essayé de le rendre agréable à l'oreille, tout en gardant cette improvisation de piano que j'aimais bien. À l'époque, je cherchais à composer des musiques pour mettre en fond sonore sur mes jeux, et différents autres projets.<br><br>
+                        <audio controls>
+                            <source src="/projects/Musique/Parcequ'il faut une première.wav" type="audio/mpeg">
+                            Your browser does not support this audio format.
+                          </audio>
+                </div>
+                <div class="project-card">
+                    <h3>Voyage au cœur de la bataille.mp3</h3>
+                    <p>Ce morceau nous plonge au milieu de la guerre. Ici, les sons aigus et distordus nous mettent dans l'ambiance, les longues notes sourdes du début représentent des cornes de brume annonçant le combat, les notes courtes qui les suivent sont la marche des soldats, la caisse claire le bruit des machines, la mélodie annonce l'arrivée des flèches, les cymbales, celle des coups de feu... Tout s'accélère, un grand nombre d'acteurs interviennent, les sons se superposent, devenant un vacarme, de violents cris se font entendre, des cris de douleur, de mort. Et soudain, le silence. La voix des anges se fait alors entendre, pleurant la bêtise humaine qui a emporté avec elle tant de vies... <br>Pris d'un élan artistique, j'ai voulu m'essayer à la musique expérimentale et symbolique. Je ne suis pas peu fier du résultat.<br><br>
+                        <audio controls>
+                            <source src="/projects/Musique/Experimental - Voyage au coeur d'une bataille.wav" type="audio/mpeg">
+                            Your browser does not support this audio format.
+                          </audio>
+                </div>
+            </section>
+            <section class="projects">
+                <div class="project-card">
+                    <h3>Upbeat Pop</h3>
+                    <p>Mon meilleur morceau. Celui-ci est celui qui bouge le plus. C'est mon dernier, et je ne compte pas arrêter de composer dans ce style qui me plaît beaucoup. <br> (Ceci est une première version, elle n'est pas terminée)<br><br>
+                        <audio controls>
+                            <source src="/projects/Musique/Upbeat Pop.mp3" type="audio/mpeg">
+                            Your browser does not support this audio format.
+                          </audio>
+                </div>
+                <div class="project-card">
+                    <h3>Xmas is Massive</h3>
+                    <p>Pour un projet de Noël, un de mes amis m'a demandé de réaliser une musique d'ambiance dans le thème. Je trouvais le résultat assez amusant, alors j'ai décidé de le conserver !<br><br>
+                        <audio controls>
+                            <source src="/projects/Musique/Xmas is Massive.mp3" type="audio/mpeg">
+                            Your browser does not support this audio format.
+                          </audio>
+                </div>
+            </section>
+            <section class="projects">
+                <div class="project-card">
+                    <h3>Modern Hip-Hop V1</h3>
+                    <p>J'ai voulu tester autre chose. Avec ce nouveau logiciel de MAO, me voilà dans quelque chose de bien plus joyeux !<br><br>
+                        <audio controls>
+                            <source src="/projects/Musique/Modern Hip-Hop V1.mp3" type="audio/mpeg">
+                            Your browser does not support this audio format.
+                          </audio>
+                </div>
+                <div class="project-card">
+                    <h3>Modern Hip-Hop V2</h3>
+                    <p>Le style de mon morceau précédent m'a plu. Bien déterminé à progresser, j'ai donc décidé de continuer à composer du Hip-Hop.<br><br>
+                        <audio controls>
+                            <source src="/projects/Musique/Modern Hip-Hop V2.mp3" type="audio/mpeg">
+                            Your browser does not support this audio format.
+                          </audio>
+                </div>
+                <div class="project-card">
+                    <h3>Modern Hip-Hop V3</h3>
+                    <p>Je suis plutôt content de ce dernier morceau de Hip-Hop, mais je pense avoir fait le tour de ce genre. Il sera donc le dernier.<br><br>
+                        <audio controls>
+                            <source src="/projects/Musique/Modern Hip-Hop V3.mp3" type="audio/mpeg">
+                            Your browser does not support this audio format.
+                          </audio>
+                </div>
+            </section>
+        </section>
+    </main>
+    <a href="https://youtube.com/playlist?list=PL9ss6CPdnziN4JcARi4xeSJNZyT9dWSDY&si=q7AA9_mCiYPeaEIe">
+        <footer>
+            <p>Clique ici pour écouter ma musique directement sur ma chaîne YouTube !</p>
+        </footer>
+    </a>
+
+    <script>
+        // Script pour le menu hamburger
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.getElementById('hamburger-menu');
+            const navMenu = document.getElementById('nav-menu');
+
+            hamburger.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            });
+
+            // Fermer le menu quand on clique sur un lien
+            const navLinks = document.querySelectorAll('#nav-menu a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    navMenu.classList.remove('active');
+                    hamburger.classList.remove('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
