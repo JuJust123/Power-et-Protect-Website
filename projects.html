@@ -14,16 +14,25 @@
 </head>
 
 <script>
-    function switchLanguage(lang) {
-      const allLangs = ['fr', 'en']; // Les langues disponibles
-  
-      allLangs.forEach(l => {
-        // Pour chaque élément de chaque langue
-        document.querySelectorAll('.' + l).forEach(el => {
-          el.style.display = (l === lang) ? '' : 'none';
-        });
+  function switchLanguage(lang) {
+    const allLangs = ['fr', 'en'];
+
+    // Enregistre la langue dans le navigateur
+    localStorage.setItem('lang', lang);
+
+    // Applique la langue sélectionnée
+    allLangs.forEach(l => {
+      document.querySelectorAll('.' + l).forEach(el => {
+        el.style.display = (l === lang) ? '' : 'none';
       });
-    }
+    });
+  }
+
+  // Appliquer automatiquement la langue mémorisée au chargement
+  document.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem('lang') || 'fr'; // langue par défaut : fr
+    switchLanguage(savedLang);
+  });
 </script>
 
 <body>
